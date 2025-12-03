@@ -1,0 +1,49 @@
+# ------------------------------------
+# 1. THEME SETUP
+# ------------------------------------
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "dark" # Use "dark" for a clean, bold look. Try "mint" or "air" for light.
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+# ------------------------------------
+# 2. SITE METADATA
+# ------------------------------------
+locale: "en-US"
+title: "Surbhi Meena"
+subtitle: "Product Manager | ML Researcher | MSIS Candidate @ UW"
+name: "Surbhi Meena"
+description: "Building reliable AI, scalable data systems, and user-centric products."
+url: "https://sam031195.github.io" # Base URL (your GitHub username URL)
+# CRITICAL FIX: The baseurl MUST match the repository name for non-root sites.
+baseurl: "/portfolio" 
+repository: "sam031195/portfolio"
+
+# ------------------------------------
+# 3. NAVIGATION
+# ------------------------------------
+header:
+  - title: "Home"
+    url: "/"
+  - title: "Projects"
+    url: "/projects/"
+  - title: "Research"
+    url: "/research/"
+  - title: "Experience"
+    url: "/experience/"
+  - title: "Contact"
+    url: "/contact/"
+
+# ------------------------------------
+# 4. FOOTER LINKS
+# ------------------------------------
+footer:
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/your-linkedin-profile" # Replace with your actual link
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/sam031195"
