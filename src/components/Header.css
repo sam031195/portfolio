@@ -22,6 +22,8 @@
   box-shadow: var(--shadow-lg), var(--shadow-glass-inset);
   z-index: 1000;
   transition: all 0.3s ease;
+  /* Positioning context for header snow effect */
+  overflow: hidden;
 }
 
 /* LEFT */

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { BsSun, BsMoon } from 'react-icons/bs';
 import './Header.css';
 import { personalInfo, headerContent } from '../data';
+import { HeaderFestival } from './HolidayEffects';
 
 interface HeaderProps {
   activeSection: string;
@@ -75,6 +76,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
   return (
     <>
       <header className="header">
+        <HeaderFestival />
         <div className="header-left">
           <img 
             src={personalInfo.profileImage} 

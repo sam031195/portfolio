@@ -6,12 +6,14 @@ import Projects from './components/Projects';
 import Research from './components/Research';
 import Blog from './components/Blog';
 import Lifestyle from './components/Lifestyle';
+import HolidayEffects from './components/HolidayEffects';
 
 function App() {
   const [activeSection, setActiveSection] = useState('about');
 
   return (
     <div className="app">
+      <HolidayEffects />
       <Header 
         activeSection={activeSection} 
         setActiveSection={setActiveSection}
