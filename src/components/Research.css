@@ -1,3 +1,8 @@
+/* Import SectionHeader styles */
+@import './ui/SectionHeader.css';
+/* Import CTA component styles */
+@import './ui/CTASection.css';
+
 /* ===========================================
    RESEARCH PAGE
    =========================================== */
@@ -18,9 +23,6 @@
   width: 100%;
   box-sizing: border-box;
 }
-
-/* Import SectionHeader styles */
-@import './ui/SectionHeader.css';
 
 /* Reduce margin between SectionHeader and research grid */
 .research-container .section-header {
@@ -331,9 +333,6 @@
   color: var(--text-secondary);
   line-height: var(--line-height-relaxed);
 }
-
-/* Import CTA component styles */
-@import './ui/CTASection.css';
 
 /* ===========================================
    RESPONSIVE

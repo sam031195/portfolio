@@ -1,3 +1,6 @@
+/* Import SectionHeader styles */
+@import './ui/SectionHeader.css';
+
 /* ===========================================
    PROJECTS PAGE
    =========================================== */
@@ -18,9 +21,6 @@
   width: 100%;
   box-sizing: border-box;
 }
-
-/* Import SectionHeader styles */
-@import './ui/SectionHeader.css';
 
 /* Reduce margin between SectionHeader and projects grid */
 .projects-container .section-header {

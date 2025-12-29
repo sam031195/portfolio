@@ -64,7 +64,6 @@ const Lifestyle = () => {
                 </div>
               </div>
             </div>
-            <button className="view-all-btn">{lifestyleContent.beyondScreen.viewAll}</button>
           </div>
         </div>
 

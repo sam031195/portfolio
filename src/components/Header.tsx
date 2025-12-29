@@ -10,8 +10,6 @@ interface HeaderProps {
 
 const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
   const [isDark, setIsDark] = useState(() => {
-    const saved = localStorage.getItem('theme');
-    if (saved) return saved === 'dark';
     return window.matchMedia('(prefers-color-scheme: dark)').matches;
   });
 
@@ -21,7 +19,6 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
     } else {
       document.documentElement.classList.remove('dark');
     }
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
   }, [isDark]);
 
   /**
@@ -72,7 +69,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
   };
 
   const toggleTheme = () => {
-    setIsDark(!isDark);
+    setIsDark(prev => !prev);
   };
 
   return (

@@ -86,6 +86,47 @@
   }
 }
 
+/* ========== LIGHT MODE (Manual Override - Higher Specificity) ========== */
+html:not(.dark) {
+  /* Force light mode when dark class is not present - overrides media query */
+  /* Backgrounds */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --bg-tertiary: #f4f5f7;
+  --bg-card: #ffffff;
+  --bg-overlay: rgba(255, 255, 255, 0.95);
+  --bg-glass: rgba(255, 255, 255, 0.55);
+  --bg-glass-hover: rgba(255, 255, 255, 0.7);
+  --bg-button: rgba(255, 255, 255, 0.65);
+  --bg-button-hover: rgba(255, 255, 255, 0.8);
+  
+  /* Text */
+  --text-primary: #111111;
+  --text-secondary: #666666;
+  --text-muted: #888888;
+  --text-inverse: #ffffff;
+  --icon-color: #000000;
+  
+  /* Borders */
+  --border-light: #e5e7eb;
+  --border-medium: #d1d5db;
+  --border-glass: rgba(255, 255, 255, 0.6);
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
+  --shadow-glass-inset: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  
+  /* Accents */
+  --accent-primary: #3b82f6;
+  --accent-hover: #2563eb;
+  
+  /* Gradients */
+  --gradient-page: linear-gradient(180deg, #f4f5f7, #e9ebef);
+  --gradient-cta: linear-gradient(180deg, #f5f0e6 0%, #e8dcc8 100%);
+}
+
 /* ========== DARK MODE (Manual Toggle) ========== */
 html.dark {
   /* Backgrounds */

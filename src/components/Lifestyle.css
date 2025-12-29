@@ -1,3 +1,6 @@
+/* Import CTA component styles */
+@import './ui/CTASection.css';
+
 /* ===========================================
    LIFESTYLE PAGE
    =========================================== */
@@ -288,9 +291,6 @@
   background: var(--bg-secondary);
   border-color: var(--text-primary);
 }
-
-/* Import CTA component styles */
-@import './ui/CTASection.css';
 
 /* ===========================================
    RESPONSIVE

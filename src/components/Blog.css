@@ -1,3 +1,6 @@
+/* Import SectionHeader styles */
+@import './ui/SectionHeader.css';
+
 /* ===========================================
    BLOG PAGE
    =========================================== */
@@ -17,10 +20,8 @@
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
-
-/* Import SectionHeader styles */
-@import './ui/SectionHeader.css';
 
 .blog-header {
   text-align: center;
@@ -171,6 +172,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing-3xl);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* Blog Card */
