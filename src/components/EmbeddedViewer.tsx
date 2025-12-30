@@ -48,8 +48,9 @@ const EmbeddedViewer = ({ url, title = "Content", onClose }: EmbeddedViewerProps
         onLoad={handleLoad}
         onError={handleError}
         loading="eager"
-        sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
+        sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
         allow="fullscreen"
+        referrerPolicy="no-referrer"
       />
       
       {/* Mini header overlay to hide "Made in Framer" badge and provide close button */}

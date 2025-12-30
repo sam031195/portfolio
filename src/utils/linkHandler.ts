@@ -11,12 +11,44 @@ interface HandleLinkClickParams {
   onOpenModal: (url: string, title: string) => void;
 }
 
+// Domains that block iframe embedding (X-Frame-Options, CSP)
+// These will open directly in a new tab instead of attempting to embed
+const IFRAME_BLOCKED_DOMAINS = [
+  'kaggle.com',
+  'github.com',
+  'linkedin.com',
+  'medium.com',
+  'colab.research.google.com',
+  'youtube.com',
+  'facebook.com',
+  'twitter.com',
+  'instagram.com',
+] as const;
+
+/**
+ * Check if a URL's domain blocks iframe embedding
+ */
+const cannotEmbed = (url: string): boolean => {
+  try {
+    const hostname = new URL(url).hostname.toLowerCase();
+    return IFRAME_BLOCKED_DOMAINS.some(domain => hostname.includes(domain));
+  } catch {
+    return false;
+  }
+};
+
 /**
  * Generic handler for opening links in modal or new tab
  */
 export const handleLinkClick = ({ item, onOpenModal }: HandleLinkClickParams): void => {
   // Priority 1: Website URL with embed flag
   if (item.websiteUrl && item.embedInModal) {
+    // Check if this domain blocks iframe embedding
+    if (cannotEmbed(item.websiteUrl)) {
+      // Open directly in new tab instead of trying to embed
+      window.open(item.websiteUrl, '_blank', 'noopener,noreferrer');
+      return;
+    }
     onOpenModal(item.websiteUrl, item.title);
     return;
   }

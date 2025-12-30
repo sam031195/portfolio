@@ -382,7 +382,7 @@ export const researchProjects: ResearchProject[] = [
     category: "Graph Neural Networks · Bayesian ML · Forecasting",
     year: "2024",
     featured: true,
-    imageUrl: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&h=600&fit=crop&q=80&grayscale",
+    imageUrl: "https://images.unsplash.com/photo-1640246944368-9738b2d1150a?w=800&h=600&fit=crop&q=80",
     researchPaperUrl: "https://docs.google.com/document/d/1CMw4o3IfY1jnMLFF6I-IsFf6pzfBWY4w/preview",
   },
   {
@@ -392,7 +392,7 @@ export const researchProjects: ResearchProject[] = [
     category: "LLMs · Retrieval · NLP · UW",
     year: "2024",
     featured: false,
-    imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=600&fit=crop&q=80&grayscale",
+    imageUrl: "https://plus.unsplash.com/premium_photo-1681412205724-067303630816?w=800&h=600&fit=crop&q=80",
     researchPaperUrl: "https://docs.google.com/document/d/1fPwshb6uo6Q3I-0y1NISRvDQ4TCFq_7V/preview",
   },
   {
@@ -402,7 +402,7 @@ export const researchProjects: ResearchProject[] = [
     category: "Uncertainty Estimation · LLM Evaluation · UW",
     year: "2024",
     featured: false,
-    imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop&q=80&grayscale",
+    imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop&q=80",
     researchPaperUrl: "https://docs.google.com/document/d/1IVl2YTUxBwcyG7KN14OP9MSzfwlx1YKc/preview",
   },
   {
@@ -412,7 +412,7 @@ export const researchProjects: ResearchProject[] = [
     category: "Explainable AI · Fairness · Risk Modeling · UW",
     year: "2024",
     featured: false,
-    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&q=80&grayscale",
+    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&q=80",
     researchPaperUrl: "https://docs.google.com/document/d/1OQigD9OdH4lHfb2qCGBvh_Vr0Oo8_dGt/preview",
   },
   {
@@ -422,16 +422,17 @@ export const researchProjects: ResearchProject[] = [
     category: "RAG · Fintech · Risk-Aware AI",
     year: "2025",
     featured: false,
-    imageUrl: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=800&h=600&fit=crop&q=80&grayscale",
+    imageUrl: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&h=600&fit=crop&q=80",
     researchPaperUrl: "https://docs.google.com/document/d/11X-a_NqiTUeWQA_ye-V7X9yd17liTe7k/preview",
   },
   {
     id: "6",
     title: "MedScribe AI",
-    description:"Built a privacy-first AI medical scribe that transcribes and summarizes doctor–patient conversations, generates structured EHR notes, and suggests potential diagnoses using medical-context-aware LLMs. Designed for HIPAA compliance and EHR integration (Epic/Cerner).",    category: "Generative AI · Healthcare · NLP",
+    description:"Built a privacy-first AI medical scribe that transcribes and summarizes doctor–patient conversations, generates structured EHR notes, and suggests potential diagnoses using medical-context-aware LLMs. Designed for HIPAA compliance and EHR integration (Epic/Cerner).",
+    category: "Generative AI · Healthcare · NLP",
     year: "2025",
     featured: false,
-    imageUrl: "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=800&h=600&fit=crop&q=80&grayscale",
+    imageUrl: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop&q=80",
     websiteUrl: "https://final-safe-45824919.figma.site/",
     embedInModal: true,
   },
@@ -580,7 +581,7 @@ export const projectsContent = {
   newsletter: {
     label: "Newsletter",
     heading: ["Get the latest news", "into your inbox"],
-    buttonText: "See it Live",
+    buttonText: "Coming Soon",
   },
 };
 
@@ -607,7 +608,7 @@ export const researchContent = {
     description: "Specializing in machine learning, data science, and AI systems. From graph neural networks to RAG pipelines, I focus on building robust, explainable, and production-ready solutions.",
   },
   cta: {
-    title: ["Let's build your", "website together"],
+    title: ["Looking forward to", "working together"],
     buttonText: "Get in touch",
   },
 };
@@ -617,18 +618,18 @@ export const researchContent = {
 // ===========================================
 export const lifestyleContent = {
   philosophy: {
-    label: "✦ DESIGN PHILOSOPHY",
+    label: "✦ WORK PHILOSOPHY",
     words: ["Simplicity.", "Functionality.", "Balance."],
     description: "I believe great design is invisible—it works so seamlessly that users don't notice it. My approach combines simplicity with powerful functionality, always maintaining balance between aesthetics and usability. Every pixel serves a purpose, every interaction tells a story.",
     imageUrl: designPhilosophyImage,
   },
   beyondScreen: {
     title: "Beyond Screen",
-    description: "Life outside of design. These are the things that inspire me, keep me grounded, and fuel my creativity.",
+    description: "Movement fuels my work. Winter sports, tennis, and hiking are my favorite ways to clear my head and find fresh perspective.",
     items: {
       reading: "Currently Reading: Laws of UX by Jon Yablonski",
       location: "Currently Based in Seattle, WA",
-      football: "Love playing Football on weekends",
+      football: "Love playing Tennis on weekends",
     },
     viewAll: "View all",
   },
@@ -645,7 +646,7 @@ export const lifestyleContent = {
     },
   },
   cta: {
-    title: ["Let's build your", "website together"],
+    title: "Contact for more details",
     buttonText: "Get in touch",
   },
 };

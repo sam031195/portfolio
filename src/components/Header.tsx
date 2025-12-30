@@ -118,7 +118,8 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
           
           <button
             className="contact-btn"
-            onClick={() => scrollToSection('contact')}
+            onClick={() => window.open(personalInfo.linkedin, '_blank', 'noopener,noreferrer')}
+            aria-label="Connect on LinkedIn"
           >
             {headerContent.contactButton}
           </button>

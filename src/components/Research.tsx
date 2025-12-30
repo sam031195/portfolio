@@ -26,13 +26,15 @@ const Research = () => {
                 onClick={isClickable ? () => handleLinkClick({ item: project, onOpenModal: openModal }) : undefined}
               >
                 <Card className="research-card" border>
-                  <div className="research-image">
-                    <img 
-                      src={project.imageUrl} 
-                      alt={project.title}
-                      className="research-image-img"
-                    />
-                  </div>
+                  {project.imageUrl && (
+                    <div className="research-image">
+                      <img 
+                        src={project.imageUrl} 
+                        alt={project.title}
+                        className="research-image-img"
+                      />
+                    </div>
+                  )}
                   <div className="research-content">
                     <div className="research-info">
                       <p className="research-project-title">{project.title}</p>
