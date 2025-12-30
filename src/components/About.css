@@ -468,24 +468,75 @@
   }
 
   .awards-card {
-    padding: var(--spacing-xl);
+    padding: var(--spacing-lg);
   }
 
   .section-title {
-    font-size: var(--font-size-3xl);
+    font-size: var(--font-size-2xl);
+  }
+
+  .section-description {
+    font-size: var(--font-size-sm);
   }
 
   .subscribe-line {
     width: 100px;
   }
 
+  .about-membership {
+    padding: var(--spacing-lg);
+  }
+
   .membership-card {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-2xl);
+    gap: var(--spacing-lg);
   }
 
   .membership-images {
     display: none;
+  }
+
+  .membership-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .membership-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .membership-item .list-item__content {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .membership-item .list-item__title {
+    font-size: var(--font-size-base);
+    word-break: break-word;
+  }
+
+  .membership-item .list-item__subtitle {
+    font-size: var(--font-size-sm);
+  }
+
+  .membership-duration {
+    position: static;
+    transform: none;
+    font-size: var(--font-size-xs);
+    margin-top: var(--spacing-xs);
+    padding-left: calc(48px + var(--spacing-md));
+  }
+
+  .membership-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .list-vertical {
+    gap: var(--spacing-md);
   }
 
   .techstack-items {

@@ -318,17 +318,49 @@
     height: 220px;
   }
 
+  .philosophy-image-img {
+    height: 250px;
+  }
+
+  .beyond-screen-card {
+    padding: var(--spacing-lg);
+  }
+
+  .beyond-screen-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .beyond-screen-description {
+    font-size: var(--font-size-xs);
+  }
+
   .beyond-screen-grid {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: var(--spacing-xs);
+  }
+
+  .beyond-item {
+    border-radius: 12px;
+  }
+
+  /* Override the grid-row span for city image on mobile */
+  .beyond-item:has(.beyond-image.city) {
+    grid-column: 1;
+    grid-row: auto;
   }
 
   .beyond-image {
-    height: 200px;
+    height: 160px;
   }
 
   .beyond-image.city {
-    grid-row: auto;
-    height: 200px;
+    height: 160px;
+  }
+
+  .beyond-label {
+    font-size: 0.75rem;
+    padding: var(--spacing-xs);
   }
 
   .info-cards {
