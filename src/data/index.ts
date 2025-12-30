@@ -68,7 +68,7 @@ export const projects: Project[] = [
     title: "MedScribe AI",
     description: "Built a privacy-first AI medical scribe that transcribes and summarizes doctor–patient conversations, generates structured EHR notes, and suggests potential diagnoses using medical-context-aware LLMs.",
     technologies: ["Generative AI", "Healthcare", "NLP"],
-    liveUrl: "#",
+    liveUrl: "#design-showcase",
     imageUrl: medScribeAI,
   },
   {
