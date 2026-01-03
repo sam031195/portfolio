@@ -440,20 +440,40 @@ export const researchProjects: ResearchProject[] = [
 
 export const skillCategories: SkillCategory[] = [
   {
-    title: "Branding",
-    skills: ["Brand Strategy", "Logo Design", "Visual Identity", "Brand Guidelines"],
+    title: "Applied ML & NLP",
+    skills: [
+      "Generative AI: RAG, Prompting, LLMs",
+      "Reliability: Calibration, Uncertainty, Deferral",
+      "Graph ML: GNNs, Relational Data",
+      "Evaluation: ECE, NLL, Error Analysis"
+    ],
   },
   {
-    title: "Digital",
-    skills: ["Web Design", "Web Development", "UX/UI Design", "E-Commerce"],
+    title: "MLOps & Production",
+    skills: [
+      "Frameworks: PyTorch, TensorFlow",
+      "Deployment: APIs, Batch Pipelines, Docker",
+      "Retrieval: FAISS, BM25, Reranking",
+      "Tooling: Git, Experiment Tracking"
+    ],
   },
   {
-    title: "Motion",
-    skills: ["Motion Graphics", "Video Production", "Animations", "Branded Content"],
+    title: "Data Engineering",
+    skills: [
+      "Architecture: Star Schema, Data Warehousing",
+      "Pipelines: ETL, Data Validation",
+      "Analytics: pandas, NumPy, SQL",
+      "Modeling: Feature Engineering"
+    ],
   },
   {
-    title: "Social media",
-    skills: ["Strategy", "Content Creation", "Community Management", "Advertising"],
+    title: "Product Leadership",
+    skills: [
+      "Strategy: Roadmapping, Product Strategy",
+      "Management: Stakeholder Management, PRDs",
+      "Execution: Agile, Scrum, Jira",
+      "Design: UX Research, Figma"
+    ],
   },
 ];
 
