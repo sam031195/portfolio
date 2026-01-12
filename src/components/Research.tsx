@@ -80,7 +80,8 @@ const Research = () => {
         <CTASection
           title={researchContent.cta.title}
           buttonText={researchContent.cta.buttonText}
-          onButtonClick={() => window.location.href = `mailto:${personalInfo.email}`}
+          onButtonClick={() => window.open(personalInfo.linkedin, '_blank', 'noopener,noreferrer')}
+          className="research-cta"
         />
       </div>
 

@@ -70,7 +70,7 @@ const Lifestyle = () => {
         <CTASection
           title={lifestyleContent.cta.title}
           buttonText={lifestyleContent.cta.buttonText}
-          onButtonClick={() => window.location.href = `mailto:${personalInfo.email}`}
+          onButtonClick={() => window.open(personalInfo.linkedin, '_blank', 'noopener,noreferrer')}
           className="lifestyle-cta"
         />
       </div>
