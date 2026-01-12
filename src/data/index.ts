@@ -17,6 +17,7 @@ import beyondMinimalismWebDesign from '../assets/images/blog/13.jpg';
 import whenToRebrandSigns from '../assets/images/blog/14.jpg';
 import LedgerLens from '../assets/images/blog/15.jpg';
 import whyXGBoostWins from '../assets/images/blog/16.jpg';
+import aiRankingsImage from '../assets/images/blog/17.webp';
 
 // Import lifestyle images
 import designPhilosophyImage from '../assets/images/lifestyle/17.jpg';
@@ -502,6 +503,16 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: "2",
+    title: "The Next Step in AI Rankings is Here",
+    date: "Jan 12, 2026",
+    author: "Surbhi Meena",
+    description: "Exploring the evolution of AI rankings and what it means for the future of artificial intelligence systems and their evaluation.",
+    category: "AI & Machine Learning",
+    imageUrl: aiRankingsImage,
+    url: "https://medium.com/@surbhimeena002/the-next-step-in-ai-rankings-is-here-dec0d44e3326",
+  },
+  {
+    id: "3",
     title: "Predicting U.S. Airline Delays: What Airlines Can Actually Do",
     date: "Jan 15, 2026",
     author: "Surbhi Meena",
@@ -511,7 +522,7 @@ export const blogPosts: BlogPost[] = [
     url: "https://medium.com/@surbhimeena002/predicting-u-s-769f77e07d32",
   },
   {
-    id: "3",
+    id: "4",
     title: "Turning WellBQ into Weekly, Actionable Signals",
     date: "Jan 10, 2026",
     author: "Surbhi Meena",
@@ -521,7 +532,7 @@ export const blogPosts: BlogPost[] = [
     url: "https://medium.com/@surbhimeena002/microsoft-wellbq-employee-wellness-score-hybrid-work-scorecard-ec6ad5e1d1a8",
   },
   {
-    id: "4",
+    id: "5",
     title: "A Privacy-First Medical Scribe That Restores Time to Patient Care",
     date: "Dec 20, 2025",
     author: "Surbhi Meena",
@@ -531,7 +542,7 @@ export const blogPosts: BlogPost[] = [
     url: "https://medium.com/@surbhimeena002/a-privacy-first-medical-scribe-that-gives-clinicians-their-evenings-back-19e1297031d9?postPublishedType=initial",
   },
   {
-    id: "5",
+    id: "6",
     title: "Decoding Airbnb Market Dynamics in Snowflake Data Warehouse",
     date: "Dec 10, 2025",
     author: "Surbhi Meena",
@@ -541,7 +552,7 @@ export const blogPosts: BlogPost[] = [
     url: "https://medium.com/@surbhimeena002/from-raw-airbnb-csvs-to-a-snowflake-data-warehouse-pricing-occupancy-and-host-performance-in-9a6dbc0d4baa",
   },
   {
-    id: "6",
+    id: "7",
     title: "LedgerLens",
     date: "Nov 25, 2025",
     author: "Surbhi Meena",
@@ -550,7 +561,7 @@ export const blogPosts: BlogPost[] = [
     imageUrl: LedgerLens,
   },
   {
-    id: "7",
+    id: "8",
     title: "Why XGBoost Wins at Market Level Pricing for Flight Fare Prediction",
     date: "Nov 15, 2025",
     author: "Surbhi Meena",
@@ -561,7 +572,7 @@ export const blogPosts: BlogPost[] = [
   },
 ];
 
-export const blogCategories = ["All", "Data Science", "Product Management", "Healthcare AI", "Data Engineering", "Fintech", "Machine Learning"];
+export const blogCategories = ["All", "AI & Machine Learning", "Data Science", "Product Management", "Healthcare AI", "Data Engineering", "Fintech", "Machine Learning"];
 
 // ===========================================
 // ABOUT PAGE CONTENT
