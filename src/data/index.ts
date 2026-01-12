@@ -151,7 +151,7 @@ export const education: Education[] = [
   {
     degree: "Master of Science in Information Systems",
     institution: "University of Washington, Seattle, WA",
-    duration: "2024 - 2026",
+    duration: "2025 - 2026",
     description: "Coursework: Machine Learning for IS; Probabilistic Modeling; Optimization for ML; NLP; Information Retrieval; Data Management & SQL; Distributed Data Systems; Experimentation & Causal Inference; Responsible & Human‑Centered AI; Programming for Data Science (Python)",
   },
   {
@@ -380,7 +380,7 @@ export const researchProjects: ResearchProject[] = [
     title: "GNN for Multi-Echelon Demand Forecasting",
     description: "​​Built a message-passing GNN with a Bayesian output layer to produce risk-aware demand forecasts with calibrated uncertainty; outperformed LSTM baselines on error and coverage under distribution shift.",
     category: "Graph Neural Networks · Bayesian ML · Forecasting",
-    year: "2024",
+    year: "2025",
     featured: true,
     imageUrl: "https://images.unsplash.com/photo-1640246944368-9738b2d1150a?w=800&h=600&fit=crop&q=80",
     researchPaperUrl: "https://docs.google.com/document/d/1CMw4o3IfY1jnMLFF6I-IsFf6pzfBWY4w/preview",
@@ -390,7 +390,7 @@ export const researchProjects: ResearchProject[] = [
     title: "Evidence-First RAG with Conflict Auditing",
     description:"Designed a detect-then-decode RAG pipeline with BM25 + dense retrieval, cross-encoder reranking, NLI-based contradiction checks, and citation-grounded outputs with selective abstention under weak evidence.",
     category: "LLMs · Retrieval · NLP · UW",
-    year: "2024",
+    year: "2025",
     featured: false,
     imageUrl: "https://plus.unsplash.com/premium_photo-1681412205724-067303630816?w=800&h=600&fit=crop&q=80",
     researchPaperUrl: "https://docs.google.com/document/d/1fPwshb6uo6Q3I-0y1NISRvDQ4TCFq_7V/preview",
@@ -400,7 +400,7 @@ export const researchProjects: ResearchProject[] = [
     title: "Calibration & Deferral for Long-Context QA",
     description:"Implemented temperature scaling, ensembles, and conformal prediction to guarantee risk-bounded answers or defer; analyzed calibration drift with long prompts and noisy retrieval.",
     category: "Uncertainty Estimation · LLM Evaluation · UW",
-    year: "2024",
+    year: "2025",
     featured: false,
     imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop&q=80",
     researchPaperUrl: "https://docs.google.com/document/d/1IVl2YTUxBwcyG7KN14OP9MSzfwlx1YKc/preview",
@@ -410,7 +410,7 @@ export const researchProjects: ResearchProject[] = [
     title: "Explainable Supplier Risk Modeling for SME Inclusion",
     description:"Built SHAP-based explanation pipelines on supplier risk models to generate human-readable rationales and enable fairness audits supporting SME inclusion.",
     category: "Explainable AI · Fairness · Risk Modeling · UW",
-    year: "2024",
+    year: "2025",
     featured: false,
     imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&q=80",
     researchPaperUrl: "https://docs.google.com/document/d/1OQigD9OdH4lHfb2qCGBvh_Vr0Oo8_dGt/preview",
@@ -503,7 +503,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: "2",
     title: "Predicting U.S. Airline Delays: What Airlines Can Actually Do",
-    date: "Jan 15, 2025",
+    date: "Jan 15, 2026",
     author: "Surbhi Meena",
     description: "Flight delays are one of those problems that feel personal when you're traveling and deeply expensive when you're operating. They disrupt crews, gates, aircraft rotations, and customer trust — and they create cascading effects where one late departure becomes several late arrivals.",
     category: "Data Science",
@@ -513,7 +513,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: "3",
     title: "Turning WellBQ into Weekly, Actionable Signals",
-    date: "Jan 10, 2025",
+    date: "Jan 10, 2026",
     author: "Surbhi Meena",
     description: "A Privacy‑First Wellness Scorecard. Flexible work expands autonomy but without measurement, it can quietly amplify strain. This project operationalizes well-being into one score, five domain drilldowns, and a dashboard leaders can actually use.",
     category: "Product Management",
@@ -523,7 +523,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: "4",
     title: "A Privacy-First Medical Scribe That Restores Time to Patient Care",
-    date: "Dec 20, 2024",
+    date: "Dec 20, 2025",
     author: "Surbhi Meena",
     description: "The signal is loud: clinicians spend a huge amount of time inside EHR interfaces. In our framing, the real issue isn't that doctors can't document, it's that documentation steals time from care and accelerates burnout. MedScribe is transforming clinical workflows through intelligent, AI documentation.",
     category: "Healthcare AI",
@@ -533,7 +533,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: "5",
     title: "Decoding Airbnb Market Dynamics in Snowflake Data Warehouse",
-    date: "Dec 10, 2024",
+    date: "Dec 10, 2025",
     author: "Surbhi Meena",
     description: "If you've ever hosted or even just browsed listings, you've probably felt the same uncertainty: Should I raise prices in summer? Does adding amenities actually increase bookings? Are \"good neighborhoods\" just expensive or also consistently occupied?",
     category: "Data Engineering",
@@ -543,7 +543,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: "6",
     title: "LedgerLens",
-    date: "Nov 25, 2024",
+    date: "Nov 25, 2025",
     author: "Surbhi Meena",
     description: "LedgerLens resolves the critical issue of providing answers to the employee-benefits and internal policy queries within the financial institutions where unsubstantiated answers may lead to legal, financial or compliance implications.",
     category: "Fintech",
@@ -552,7 +552,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: "7",
     title: "Why XGBoost Wins at Market Level Pricing for Flight Fare Prediction",
-    date: "Nov 15, 2024",
+    date: "Nov 15, 2025",
     author: "Surbhi Meena",
     description: "Demand shifts, fuel prices change, market structure evolves, and carriers apply distinct pricing strategies. For travelers, it often feels random. For analysts, the question is whether public data contains enough structure to predict flight fares reliably without proprietary airline systems or web scraping.",
     category: "Machine Learning",
