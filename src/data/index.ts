@@ -384,7 +384,7 @@ export const researchProjects: ResearchProject[] = [
     year: "2025",
     featured: true,
     imageUrl: "https://images.unsplash.com/photo-1640246944368-9738b2d1150a?w=800&h=600&fit=crop&q=80",
-    researchPaperUrl: "https://docs.google.com/document/d/1CMw4o3IfY1jnMLFF6I-IsFf6pzfBWY4w/preview",
+    researchPaperUrl: "https://docs.google.com/document/d/1N8gip4aTSGG_ZJ-TZNu3t2RGiHoQstcM/preview",
   },
   {
     id: "2",
@@ -394,7 +394,7 @@ export const researchProjects: ResearchProject[] = [
     year: "2025",
     featured: false,
     imageUrl: "https://plus.unsplash.com/premium_photo-1681412205724-067303630816?w=800&h=600&fit=crop&q=80",
-    researchPaperUrl: "https://docs.google.com/document/d/1fPwshb6uo6Q3I-0y1NISRvDQ4TCFq_7V/preview",
+    researchPaperUrl: "https://docs.google.com/document/d/180ZCjIXCxPyJrCiEdtYGUpxPLUpBaWAG/preview",
   },
   {
     id: "3",
@@ -404,7 +404,7 @@ export const researchProjects: ResearchProject[] = [
     year: "2025",
     featured: false,
     imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop&q=80",
-    researchPaperUrl: "https://docs.google.com/document/d/1IVl2YTUxBwcyG7KN14OP9MSzfwlx1YKc/preview",
+    researchPaperUrl: "https://docs.google.com/document/d/1VH80MtSYAtOS-RunQOU4fVXYiRhm9dTC/preview",
   },
   {
     id: "4",
@@ -414,7 +414,7 @@ export const researchProjects: ResearchProject[] = [
     year: "2025",
     featured: false,
     imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&q=80",
-    researchPaperUrl: "https://docs.google.com/document/d/1OQigD9OdH4lHfb2qCGBvh_Vr0Oo8_dGt/preview",
+    researchPaperUrl: "https://docs.google.com/document/d/1BYLLBgn6olF9A4NbtrEtgHnPQbf4zLIW/preview",
   },
   {
     id: "5",
@@ -424,7 +424,7 @@ export const researchProjects: ResearchProject[] = [
     year: "2025",
     featured: false,
     imageUrl: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&h=600&fit=crop&q=80",
-    researchPaperUrl: "https://docs.google.com/document/d/11X-a_NqiTUeWQA_ye-V7X9yd17liTe7k/preview",
+    researchPaperUrl: "https://docs.google.com/document/d/1iBXgwHLAAzHimZLJArBUIUjInGgGYgCa/preview",
   },
   {
     id: "6",
