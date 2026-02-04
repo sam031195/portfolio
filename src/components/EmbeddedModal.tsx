@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { trackEvent } from '../utils';
 import EmbeddedViewer from './EmbeddedViewer';
 import './EmbeddedModal.css';
 
@@ -30,6 +31,7 @@ const EmbeddedModal = ({ isOpen, onClose, url, title = "Content" }: EmbeddedModa
   }, [isOpen]);
 
   const handleClose = () => {
+    trackEvent('modal_close', { title, url });
     document.body.style.overflow = 'unset';
     setShouldRender(false);
     onClose();

@@ -1,6 +1,7 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
 import { personalInfo, experiences, awards, memberships, techStack, aboutContent } from '../data';
 import { Card, ListItem, IconBox } from './ui';
+import { trackEvent } from '../utils';
 import { MdContentCopy } from 'react-icons/md';
 import './About.css';
 import profileImage from '../assets/images/profile/profile_image_surbhi.jpg';
@@ -12,6 +13,7 @@ const About = () => {
   const handleCopy = useCallback(async () => {
     try {
       await navigator.clipboard.writeText(personalInfo.email);
+      trackEvent('email_copy', { location: 'about' });
       setCopied(true);
       
       // Clear existing timeout if any
@@ -25,6 +27,7 @@ const About = () => {
         timeoutRef.current = null;
       }, 2000);
     } catch (error) {
+      trackEvent('email_copy_failed', { location: 'about' });
       // Fallback for browsers that don't support clipboard API
       // Only log in development to avoid exposing errors in production
       if (import.meta.env.DEV) {

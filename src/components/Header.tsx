@@ -3,6 +3,7 @@ import { BsSun, BsMoon } from 'react-icons/bs';
 import { LAYOUT } from '../constants';
 import './Header.css';
 import { personalInfo, headerContent } from '../data';
+import { trackEvent } from '../utils';
 import { HeaderFestival } from './HolidayEffects';
 
 interface HeaderProps {
@@ -71,7 +72,14 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
   };
 
   const toggleTheme = () => {
+    const nextTheme = isDark ? 'light' : 'dark';
+    trackEvent('theme_toggle', { theme: nextTheme });
     setIsDark(prev => !prev);
+  };
+
+  const handleContactClick = () => {
+    trackEvent('contact_click', { location: 'header', destination: 'linkedin' });
+    window.open(personalInfo.linkedin, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -95,6 +103,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
               className={activeSection === item.id ? 'active' : ''}
               onClick={(e) => {
                 e.preventDefault();
+                trackEvent('nav_click', { section: item.id, label: item.label });
                 scrollToSection(item.id);
               }}
             >
@@ -118,7 +127,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
           
           <button
             className="contact-btn"
-            onClick={() => window.open(personalInfo.linkedin, '_blank', 'noopener,noreferrer')}
+            onClick={handleContactClick}
             aria-label="Connect on LinkedIn"
           >
             {headerContent.contactButton}

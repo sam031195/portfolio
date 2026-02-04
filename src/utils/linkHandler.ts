@@ -1,3 +1,5 @@
+import { trackEvent } from './analytics';
+
 interface LinkItem {
   websiteUrl?: string;
   researchPaperUrl?: string;
@@ -46,27 +48,57 @@ export const handleLinkClick = ({ item, onOpenModal }: HandleLinkClickParams): v
     // Check if this domain blocks iframe embedding
     if (cannotEmbed(item.websiteUrl)) {
       // Open directly in new tab instead of trying to embed
+      trackEvent('content_open', {
+        title: item.title,
+        action: 'new_tab',
+        link_type: 'website',
+        url: item.websiteUrl,
+      });
       window.open(item.websiteUrl, '_blank', 'noopener,noreferrer');
       return;
     }
+    trackEvent('content_open', {
+      title: item.title,
+      action: 'modal',
+      link_type: 'website',
+      url: item.websiteUrl,
+    });
     onOpenModal(item.websiteUrl, item.title);
     return;
   }
 
   // Priority 2: Research paper URL (for research items)
   if (item.researchPaperUrl) {
+    trackEvent('content_open', {
+      title: item.title,
+      action: 'new_tab',
+      link_type: 'research_paper',
+      url: item.researchPaperUrl,
+    });
     window.open(item.researchPaperUrl, '_blank', 'noopener,noreferrer');
     return;
   }
 
   // Priority 3: Website URL without embed flag
   if (item.websiteUrl) {
+    trackEvent('content_open', {
+      title: item.title,
+      action: 'new_tab',
+      link_type: 'website',
+      url: item.websiteUrl,
+    });
     window.open(item.websiteUrl, '_blank', 'noopener,noreferrer');
     return;
   }
 
   // Priority 4: Live URL (for project items)
   if (item.liveUrl && item.liveUrl !== '#') {
+    trackEvent('content_open', {
+      title: item.title,
+      action: 'new_tab',
+      link_type: 'live_url',
+      url: item.liveUrl,
+    });
     window.open(item.liveUrl, '_blank', 'noopener,noreferrer');
   }
 };

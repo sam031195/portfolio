@@ -2,7 +2,7 @@ import { researchProjects, skillCategories, personalInfo, researchContent } from
 import { SectionHeader, CTASection, Card } from './ui';
 import EmbeddedModal from './EmbeddedModal';
 import { useEmbeddedModal } from '../hooks';
-import { handleLinkClick, hasClickableAction } from '../utils';
+import { handleLinkClick, hasClickableAction, trackEvent } from '../utils';
 import './Research.css';
 
 const Research = () => {
@@ -80,7 +80,10 @@ const Research = () => {
         <CTASection
           title={researchContent.cta.title}
           buttonText={researchContent.cta.buttonText}
-          onButtonClick={() => window.open(personalInfo.linkedin, '_blank', 'noopener,noreferrer')}
+          onButtonClick={() => {
+            trackEvent('cta_click', { section: 'research', destination: 'linkedin' });
+            window.open(personalInfo.linkedin, '_blank', 'noopener,noreferrer');
+          }}
           className="research-cta"
         />
       </div>

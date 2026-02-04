@@ -1,5 +1,6 @@
 import { personalInfo, lifestyleContent } from '../data';
 import { CTASection } from './ui';
+import { trackEvent } from '../utils';
 import './Lifestyle.css';
 import cityImage from '../assets/images/lifestyle/20.jpg';
 import readingImage from '../assets/images/lifestyle/sm_5.png';
@@ -70,7 +71,10 @@ const Lifestyle = () => {
         <CTASection
           title={lifestyleContent.cta.title}
           buttonText={lifestyleContent.cta.buttonText}
-          onButtonClick={() => window.open(personalInfo.linkedin, '_blank', 'noopener,noreferrer')}
+          onButtonClick={() => {
+            trackEvent('cta_click', { section: 'lifestyle', destination: 'linkedin' });
+            window.open(personalInfo.linkedin, '_blank', 'noopener,noreferrer');
+          }}
           className="lifestyle-cta"
         />
       </div>

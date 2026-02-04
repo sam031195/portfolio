@@ -2,7 +2,7 @@ import { projects, projectsContent } from '../data';
 import { SectionHeader } from './ui';
 import EmbeddedModal from './EmbeddedModal';
 import { useEmbeddedModal } from '../hooks';
-import { handleLinkClick, hasClickableAction } from '../utils';
+import { handleLinkClick, hasClickableAction, trackEvent } from '../utils';
 import './Projects.css';
 
 const Projects = () => {
@@ -59,7 +59,10 @@ const Projects = () => {
             <span>{projectsContent.newsletter.heading[1]}</span>
           </h2>
           <div className="newsletter-cta">
-            <button className="newsletter-btn">
+            <button
+              className="newsletter-btn"
+              onClick={() => trackEvent('newsletter_click', { section: 'projects' })}
+            >
               {projectsContent.newsletter.buttonText} <span className="arrow">↗</span>
             </button>
           </div>

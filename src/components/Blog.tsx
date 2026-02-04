@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { blogPosts, blogCategories, blogContent } from '../data';
 import { SectionHeader } from './ui';
+import { trackEvent } from '../utils';
 import './Blog.css';
 
 const Blog = () => {
@@ -54,7 +55,10 @@ const Blog = () => {
               <button
                 key={category}
                 className={`filter-tag ${activeCategory === category ? 'active' : ''}`}
-                onClick={() => setActiveCategory(category)}
+                onClick={() => {
+                  trackEvent('blog_filter_click', { category });
+                  setActiveCategory(category);
+                }}
               >
                 {category}
               </button>
@@ -90,6 +94,13 @@ const Blog = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="blog-card-link"
+                    onClick={() =>
+                      trackEvent('blog_post_click', {
+                        title: post.title,
+                        category: post.category,
+                        url: post.url,
+                      })
+                    }
                   >
                     {blogContent.readArticle} <span className="arrow">→</span>
                   </a>
