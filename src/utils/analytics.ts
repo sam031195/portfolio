@@ -15,4 +15,3 @@ export const trackEvent = (eventName: string, params?: AnalyticsParams): void =>
 
   gtag('event', eventName, params);
 };
-
